@@ -57,22 +57,7 @@ def tracking_identifing():
             #combination of the original image from the webcam and the
             #overlayed rectangle for the largest face
             output_frame = frame.copy()
-
-
-
-
-            #STEPS:
-            # * Update all trackers and remove the ones that are not
-            #   relevant anymore
-            # * Every 10 frames:
-            #       + Use face detection on the current frame and look
-            #         for faces.
-            #       + For each found face, check if centerpoint is within
-            #         existing tracked box. If so, nothing to do
-            #       + If centerpoint is NOT in existing tracked box, then
-            #         we add a new tracker with a new face-id
-
-
+            
             #Increase the framecounter
             frameCounter += 1
 
